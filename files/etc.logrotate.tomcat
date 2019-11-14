@@ -1,0 +1,7 @@
+/opt/mhe/tomcat/logs/catalina.out{
+daily
+rotate 14
+compress
+missingok
+copytruncate
+}

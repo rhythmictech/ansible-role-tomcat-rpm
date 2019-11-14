@@ -1,0 +1,11 @@
+*.vagrant
+*.swo
+*.swp
+*.pyc
+*.DS_Store
+*.retry
+.idea
+*vault*
+
+# autoenv
+.env

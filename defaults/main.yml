@@ -1,0 +1,47 @@
+---
+tomcat_major_version: 8
+
+tomcat_user: tomcat
+tomcat_group: tomcat
+tomcat_create_user: True
+
+tomcat_package: tomcat{{ tomcat_major_version }}-core
+
+tomcat_catalina_base: /opt/tomcat
+tomcat_catalina_home: /usr/local/tomcat
+tomcat_working_dir: /home/{{ tomcat_user }}
+
+tomcat_use_collectd: False
+
+tomcat_allow_user_restart: false
+
+tomcat_extra_java_opts: ''
+
+tomcat_max_heap: 1024m
+
+tomcat_hostname: "{{ ansible_nodename }}"
+tomcat_default_host: "{{ ansible_nodename }}"
+tomcat_jvmroute_name: "{{ ansible_hostname }}"
+
+tomcat_manager_remoteaddr_allow: 10\.*
+
+tomcat_shutdown_value: 'shutd0wn'
+tomcat_server_port: 8005
+tomcat_http_port: 8080
+tomcat_ajp_port: 8009
+tomcat_http_connector_options: ''
+
+tomcat_enable_ajp_connector: true
+
+tomcat_manager_password: tomcat1
+
+tomcat_contexts: []
+
+tomcat_global_context:
+  jdbc_resources: []
+
+tomcat_preserve_proxy_info: True
+
+tomcat_extra_loggers: []
+
+tomcat_umask: '0022'
